@@ -1,0 +1,10 @@
+/*First CSS formatting block*/
+#content {
+  background-color: #ffff99;
+  width: 500px;
+  min-height: 100px;
+  padding: 10px;
+  margin: 10px;
+  border: dashed 4px #800000;
+  font-size: 24px;
+}
