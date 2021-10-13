@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lab X - Subject/Topic</title>
-	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<title>Lab 4 - Pseudocoding and Problem-solving</title>
 	<link rel="stylesheet" type="text/css" href="css/lab.css">
 </head>
 <body>
+	<h1>Lab 4</h1>
+	<h3>Pseudocoding and Problem-solving</h3>
+	<img src="img/image.png">
+	<div id="challenge">
+		<h2>Challenge</h2>
+		<p>
+			We were challenged with producing two sets of pseudocode lists. The first would be a logical list that anyone can follow to complete a specific task. The other described a process for a computer to perform a specific task.
+		</p>
+	</div>
+	<div id="problems">
+		<h2>Problems</h2>
+		<p>
+			We were figure out with ideas and stuck on problems
+		</p>
+	</div>
+	<div id="results">
+		<h2>Results</h2>
+		<p>
+			For the the first list, we produced a step-by-step process for changing the display name that shows in a Zoom meeting.
+			<pre><code>
+Setting the Zoom display name:
+	Open zoom application or open the zoom site
+	Sign in with your zoom account
+	If using the app
+		Click the settings button (Gear Symbol)
+		Click the profile tab
+		Click “Edit My Profile”. This will send you to the site
+		If not signed in
+			Sign in
+	If using the site
+		Go to Personal via Profile
+	On the right-hand side of the page, right of the name field click “Edit”
+	Change the text under “Display Name”
+	Press save
+			</pre></code>
+			For the second pseudocode, we modeled an elevator/lift. We turned this into comments in a javascript file.
+			<pre><code>
+// Description. This file holds the Elevator operation pseudocode
+// @author Raymond Wong, Riley Mann
 
+//If ready to target, destination floor = nearest requested floor
+//If the destination floor is above:
+	//Move upwards
+	//Up arrow lights up
+//If the destination floor is below
+	//Move downwards
+	//Down arrow lights up
+//If at the destination floor:
+	//Wait 3s then open the door for 20s
+	//If the sensor is tripped, reset the timer to 20s
+	//If the “open door” button is pushed, reset the timer to 20s
+	//If the “close door” button is pushed, nothing happens
+	//If the timer finishes
+    //close the door
+    //ready to target again
+//If an external floor button is pressed request this floor
+//If an inside floor button is pressed request that floor
+			</pre></code>
+		</p>
+	</div>
 </body>
 </html>

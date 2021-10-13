@@ -1,0 +1,46 @@
+body {
+  background-color: #aaaaaa;
+}
+
+h1 {
+  font-family: 'Courier New', monospace;
+}
+
+h2 {
+  font-family: 'Courier New', monospace;
+}
+
+h3 {
+  font-family: 'Courier New', monospace;
+}
+
+p {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+code {
+  color: #707070;
+}
+
+img {
+  padding: 10px;
+  margin: 10px;
+}
+
+div {
+  padding: 10px;
+  margin: 10px;
+  border: solid 2px #800000;
+}
+
+#challenge {
+  background-color: #ffffff;
+}
+
+#problems {
+  background-color: #ffaaaa;
+}
+
+#results {
+  background-color: #aacaff;
+}
