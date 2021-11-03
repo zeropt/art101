@@ -4,7 +4,7 @@
  * License: Public Domain
  */
 
- function sortUserName() {
+function sortUserName() {
    // In the function, declare a variable userName and use window.prompt() to
    // get the user's name from the user.
    var userName = window.prompt("Hi. Can enter your name here.");
@@ -17,7 +17,7 @@
 
    // Make sure your function uses return to return the results.
    return nameSorted;
- }
+}
 
- // output
- document.writeln("Aye, I have fixed your name: ", sortUserName(), "</br>");
+// output
+document.writeln("Aye, I have fixed your name: ", sortUserName(), "</br>");
