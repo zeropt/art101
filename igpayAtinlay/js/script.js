@@ -11,32 +11,59 @@ consonants = ['b', 'c', 'd', 'f', 'g', 'h', 'j', 'k', 'l', 'm', 'n',
 function anslatetray(txt) {
   //lowercase
   txt = txt.toLowerCase();
-  //Split text on spaces
-  words = txt.split(' ');
-  //loop through each word and translate
-  for (var i = 0; i < words.length; i++) {
-    var word = words[i].split('');
-    //loop through each letter
-    for (var j = 0; j < words[i].length; j++) {
-      if (vowels.includes(word[j])) {
-        console.log(words.substr(0,j));
-        break;
-      }
+  var word = "";
+  var output = "";
+
+  //loop through every character
+  for (var i = 0; i < txt.length; i++) {
+    if (vowels.includes(txt[i]) || consonants.includes(txt[i])) { //letter
+      word += txt[i];
+    } else { //on a non-letter
+      output += anslatetrayOrdway(word) + txt[i];
+      word = "";
     }
   }
-  return 'hello';
+  output += anslatetrayOrdway(word); //final word
+
+  return output;
 }
 
-// Attach an event listener to your button that does the following:
-document.getElementById("my-button").addEventListener("click", produceOutput);
+//function that translates a string word into piglatin
+function anslatetrayOrdway(word) {
+  //return empty if empty
+  if (!word.length) return "";
+
+  var chars = word.split('');
+  var head = [];
+  var body = [];
+  var finished_head = false;
+
+  //sort the characters into sections
+  for (var i = 0; i < chars.length; i++) {
+    if (vowels.includes(chars[i])) finished_head = true;
+    if (finished_head) body.push(chars[i]);
+    else head.push(chars[i]);
+  }
+
+  //combine
+  var output = body.join('') + head.join('');
+  if (head.length) output += "ay";
+  else output += "yay";
+
+  //return the result
+  return output;
+}
+
+// Attach an event listener to your button
+$('#my-button').click(produceOutput);
 
 function produceOutput() {
   // Gets the value of your input field
-  var txt = document.getElementById("user-name").value;
+  var txt = $('#input').val();
 
   // Run that value through anslatetray()
   translated = anslatetray(txt);
 
   // Replaces the text in <p id=output> with the results.
-  document.getElementById("output").innerText = translated;
+  $('#output').text(translated);
 }

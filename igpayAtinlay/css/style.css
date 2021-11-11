@@ -24,3 +24,8 @@ img {
   padding: 10px;
   margin: 10px;
 }
+
+#input {
+  height: 4em;
+  width: 50em;
+}
