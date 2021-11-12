@@ -1,43 +1,51 @@
 body {
-  padding: 10px;
+  padding: 0px;
   margin: 10px;
-  background-color: #aaaaaa;
-}
-
-h1 {
-  font-family: 'Courier New', monospace;
+  background-color: rgb(220, 20, 60);
+  color: whitesmoke;
+  font-family: Tahoma, Verdana, sans-serif;
 }
 
 h2 {
-  font-family: 'Courier New', monospace;
-}
-
-h3 {
-  font-family: 'Courier New', monospace;
-}
-
-p {
-  font-family: 'Noto Sans', sans-serif;
-}
-
-img {
-  padding: 10px;
-  margin: 10px;
+  text-align: center;
 }
 
 #input {
+  padding: 10px;
+  margin: 0px;
+  background-color: whitesmoke;
+
+  /*border*/
+  border: 0px solid;
+  border-radius: 5px;
+
+  /*positioning*/
   position: absolute;
   top: 80px;
   left: 2vw;
   height: 80vh;
   width: 45vw;
+
+  /*attributes*/
+  resize: none;
 }
 
 #output {
+  padding: 10px;
+  margin: 0px;
+  background-color: rgb(255, 100, 120);
+
+  /*border*/
+  border: 0px solid;
+  border-radius: 5px;
+
+  /*positioning*/
   position: absolute;
   top: 80px;
-  left: 50vw;
+  right: 2vw;
   height: 80vh;
   width: 45vw;
+
+  /*attributes*/
   overflow-wrap: break-word;
 }
