@@ -54,8 +54,8 @@ function anslatetrayOrdway(word) {
   return output;
 }
 
-// Attach an event listener to your button
-$('#my-button').click(produceOutput);
+// Attach an event listener to your input field
+$('#input').keyup(produceOutput);
 
 function produceOutput() {
   // Gets the value of your input field

@@ -26,6 +26,18 @@ img {
 }
 
 #input {
-  height: 4em;
-  width: 50em;
+  position: absolute;
+  top: 80px;
+  left: 2vw;
+  height: 80vh;
+  width: 45vw;
+}
+
+#output {
+  position: absolute;
+  top: 80px;
+  left: 50vw;
+  height: 80vh;
+  width: 45vw;
+  overflow-wrap: break-word;
 }
