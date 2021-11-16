@@ -1,0 +1,80 @@
+body {
+  /* Background */
+  background-color: DarkRed;
+
+  /* Global Layout */
+  padding: 10px;
+  margin: auto;
+  width: 98%;
+
+  /* Text */
+  color: whitesmoke;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+h1 {
+  /* Background */
+  background-color: #ff4d4d;
+
+  /* Layout */
+  padding: 16px;
+  text-align: center;
+
+  /* Border */
+  border: 0px solid;
+  border-radius: 5px;
+
+  /* Text */
+  font-size: 32px;
+}
+
+p {
+  /* Layout */
+  padding-left: 16px;
+  padding-right: 16px;
+
+  /* Text */
+  color: #cccccc;
+  font-family: 'Courier New', monospace;
+}
+
+div.block {
+  /* Background */
+  background-color: #992020;
+
+  /* Layout */
+  margin: 0px auto 32px auto;
+  width: 90%;
+  padding: 4px 32px 4px 32px;
+
+  /* Border */
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+button {
+  /* Background */
+  background-color: #ff4d4d;
+
+  /* Layout */
+  margin: 16px;
+  padding: 8px;
+  text-align: center;
+
+  /* Border */
+  border: 0px solid;
+  border-radius: 5px;
+
+  /* Text */
+  color: #cccccc;
+  font-family: 'Courier New', monospace;
+  font-weight: bold;
+
+  /* Button */
+  cursor: pointer;
+}
+
+button:active {
+  /* Background */
+  background-color: #d62929;
+}
