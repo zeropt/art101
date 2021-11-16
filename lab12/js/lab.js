@@ -20,17 +20,16 @@ function bendingElement(str) {
   // mod will now be a value between 0 and 4
   // create a conditional that will return Water, Earth, Fire, Air, Boomerang
   // depending on whether the value of mod is 0, 1, 2, 3 or 4
-  if (mod == 0) {
+  if (mod == 1) {
     return "Water";
-  } else if (mod == 1) {
-    return "Earth";
   } else if (mod == 2) {
-    return "Fire";
+    return "Earth";
   } else if (mod == 3) {
-    return "Air";
+    return "Fire";
   } else if (mod == 4) {
-    return "Boomerang";
+    return "Air";
   }
+  return "Boomerang";
 }
 
 // Create an click listener attached to #button
