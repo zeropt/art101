@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 15: AJAX</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/lab.js" defer></script>
+</head>
+<body>
+	<h1>Lab 15: AJAX</h1>
+	<div class="block">
+		<h2>Challenge</h2>
+		<p>
+			We have to create a AJAX on our webpage.
+		</p>
+	</div>
+	<div class="block">
+		<h2>Problems</h2>
+		<p>
+			Accessing the xkcd api triggered the CORS policy error so we had to install
+			the plugin to fix that error. It took a couple tries to find the correct
+			plugin. We also experienced an issue where appending an image without the
+			closing > wouldn't work. We need to remember to save our files too.
+		</p>
+	</div>
+	<div class="block">
+		<h2>Results</h2>
+		<p>
+			Here's the result of our AJAX script! Click and reclick as many times as
+			you desire!
+		</p>
+		<button id="activate">XKCD AJAX Wormhole!</button>
+		<div id="output"></div>
+	</div>
+	<a href="js/lab.js" target="source">JavaScript Source</a>
+</body>
+</html>
